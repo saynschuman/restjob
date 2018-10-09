@@ -1,0 +1,63 @@
+select::-ms-expand
+  display: none
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  appearance: none !important
+  background: #FFF
+  padding-left: 10px
+  height: 35px
+  vertical-align: middle
+  height: 35px
+  border: 1px solid #C4CCCF
+  width: inherit
+  border-radius: 3px
+  font-weight: 300
+  font-size: 15px
+  line-height: 21px
+  overflow: hidden
+  cursor:pointer
+  z-index: 1
+  &:focus
+    outline: none
+
+.arrow
+  position: relative
+  z-index: 0
+  &::before
+    content: ''
+    position: absolute
+    border: 5px solid transparent
+    border-top: 9px solid #c4c4c4
+    right: 29px
+    top: 50%
+    transform: translateY(-25%)
+
+.day
+  width: 50px
+  margin-right: 10px
+  &::before
+    right: 12px !important
+
+.month
+  width: 159px
+  margin-right: 10px
+  &::before
+    right: 12px !important
+
+.year
+  width: 98px
+  &::before
+    right: 12px !important
+
+.gender
+  width: 150px
+  &::before
+    right: 12px !important
+
+.nationality
+  width: 328px
+  &::before
+    right: 12px !important

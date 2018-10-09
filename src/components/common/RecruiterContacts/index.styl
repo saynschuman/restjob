@@ -1,0 +1,30 @@
+.recruiterContacts
+  margin-left: 80px
+  padding: 0
+  list-style none
+  margin-bottom: 3px
+  li
+    position: relative;
+    padding-left: 30px
+    margin-bottom: 10px
+    color: #24292E
+    font-size: 13px
+    font-weight: 300
+    line-height: 18px
+    &::before
+      content: ''
+      position: absolute;
+      left: 0
+      top: -1px
+      width: 20px
+      height: 20px
+      border-radius: 100%
+    &:first-child
+      &::before
+        background-image: url('./i/user.svg')
+        width: 21px
+        height: 21px
+    &:last-child
+      margin-bottom: -15px
+      &::before
+        background-image: url('./i/phone.svg')

@@ -1,0 +1,311 @@
+.item
+  padding: 0 0 50px 0 !important
+
+.mobileAppBlock
+  border: 1px solid #EBEBEB
+  border-radius: 3px
+  padding: 20px 14px
+
+.asideLeftContent
+  border: 1px solid #EBEBEB
+  padding: 14px 9px
+  border-radius: 3px
+
+.catalogSection
+  margin-bottom: 55px
+
+.catalogSectionTitle
+  color: $color-text
+  font-size: 13px
+  font-weight: bold
+  text-transform: uppercase
+  margin: 0
+  padding: 0 0 10px
+  border-bottom: 5px solid #E9EDEE
+
+.cleanList
+  float: right;
+  text-align right
+  text-transform: none;
+  font-weight: normal;
+  font-size: 12px
+  line-height: 14px
+  color: #2E99EB;
+  cursor: pointer;
+
+.item
+  position: relative
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  justify-content: center
+  padding: 23px 13px 35px 0
+  background: #fff
+  min-height: 90px
+
+  &:last-of-type
+    margin-bottom: 10px
+
+  &::after
+    content: ''
+    background-color: #F2F2F2
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 10px
+
+  .link
+    position: absolute
+    z-index: 1
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+
+.itemLogoContainer
+  width: 60px
+  min-width: 60px
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  margin-right: 20px
+  overflow: hidden
+  margin-top: 5px
+
+.itemLogo
+  max-width 100%
+
+.itemContent
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: calc(100% - 225px)
+  border-bottom: 1px solid #E9EDEE
+  padding-bottom: 35px
+
+.vacancyHeader
+  padding-right: 50px
+  position: relative
+  display: block
+  margin-bottom: 6px
+
+  &::first-letter
+    text-transform: uppercase
+
+.vacancyTitle
+  font-size: 13px
+  font-weight: bold
+  color: $color-link
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+.date
+  display: inline
+  color: #bdbdbd
+  font-size: 13px
+  margin-left: 10px
+  font-weight: 400
+
+.salary
+  display: block
+  margin-bottom: 1px
+
+.salaryAmount
+  display: inline-block
+  vertical-align: middle
+  font-size: 20px
+  color: $color-text
+  font-weight: 300
+
+.bottomInfo
+  display: block
+  ellipsis()
+
+.companyTitle
+  display: inline-block
+  vertical-align: middle
+  font-size: 12px
+  color: $color-link
+  margin-right: 8px
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+.addresses
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  font-size: 12px
+  color: #BDBDBD
+  padding-left: 22px
+
+.metroCircle
+  position: absolute
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  content: 'М'
+  width: 15px
+  height: 15px
+  font-size: 9px
+  border-radius: 50%
+  color: #F2F2F2
+
+.itemRightContent
+  min-width: 125px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  border-bottom: 1px solid #E9EDEE
+  padding-bottom: 35px
+
+.vacancyParam
+  display: block
+  white-space: nowrap
+
+.vacancyParamTitle
+  display: inline-block
+  vertical-align: middle
+  min-width: 66px
+  font-size: 13px
+  color: #bdbdbd
+
+.vacancyParamValue
+  display: inline-block
+  vertical-align: middle
+  font-size: 13px
+  color: $color-text
+
+.flRow
+  display: flex;
+  flex-direction: row;
+
+.flColumn
+  display: flex;
+  flex-direction: column;
+
+.iconContainer
+  width: 60px
+  min-width: 60px
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  margin-right: 20px
+  overflow: hidden
+  margin-top: 35px
+
+.textContainer
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  padding-top: 35px
+
+.rejectionIcon
+  width: 35px
+  height: 35px
+  background-image: url('./i/rejection.svg')
+  background-size: 100%
+
+.notAnsweredIcon
+  width: 35px
+  height: 35px
+  background-image: url('./i/notAnswered.svg')
+  background-size: 100%
+
+.invitedIcon
+  width: 35px
+  height: 35px
+  background-image: url('./i/inv.svg')
+  background-size: 100%
+
+.notReadyText
+  color: #EB5757
+  line-height: 18px
+  font-size: 13px
+  margin-bottom: 4px
+
+.titleGray
+  color: #828282
+  line-height: 18px
+  font-size: 13px
+  margin-bottom: 4px
+
+.titleGreen
+  color: #27AE60
+  line-height: 18px
+  font-size: 13px
+  margin-bottom: 4px
+
+.feedBackText
+  font-size: 13px
+  color: #24292E
+  font-weight: 300
+  line-height: 18px
+
+.showFeedback
+  margin-top: 30px
+  font-size: 11px
+  line-height: 15px
+  color: #828282
+  text-transform: uppercase;
+  -webkit-border-radius: 4px
+  -moz-border-radius: 4px
+  border-radius: 4px
+  background: #E9EDEE
+  border: 1px solid #E9EDEE
+  display: block
+  width: 161px
+  padding: 7px 0
+  text-align: center
+  cursor: pointer
+  margin-left: 80px
+
+.avatar
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  img
+    display: block;
+    width: 100%;
+    min-height: 100%;
+
+ .recruiterContacts
+   margin-left: 80px
+   padding: 0
+   list-style none
+   li
+     position: relative;
+     padding-left: 30px
+     margin-bottom: 15px
+     color: #24292E
+     font-size: 13px
+     font-weight: 300
+     line-height: 18px
+     &::before
+       content: ''
+       position: absolute;
+       left: 0
+       top: -1px
+       width: 20px
+       height: 20px
+       border-radius: 100%
+     &:first-child
+       &::before
+         background-image: url('./i/user.svg')
+         width: 21px
+         height: 21px
+     &:last-child
+       margin-bottom: -15px
+       &::before
+         background-image: url('./i/phone.svg')

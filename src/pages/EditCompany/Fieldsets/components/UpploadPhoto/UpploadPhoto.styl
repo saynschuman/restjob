@@ -1,0 +1,63 @@
+.upploadContainer
+  input
+    display: none
+  label
+    font-size: 13px
+    font-weight: 300
+    line-height: 18px
+    height: 52px
+    border: 1px solid #C4CCCF
+    display: inline-block
+    padding: 17px 0 0 17px
+    width: 170px
+    cursor: pointer
+    position: relative;
+    &:before
+      content: ''
+      position: absolute
+      width: 20px
+      height: 20px
+      right: 15px
+      top: 50%
+      transform: translateY(-50%)
+      background-image: url("./i/plus.svg")
+      
+.previewBlock
+  display: block
+
+.close
+  color: rgba(0,0,0,0.4);
+  cursor: pointer;
+  text-align: right;
+  position: absolute;
+  top: -11px;
+  right: -12px;
+  font-size: 13px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 0px 8px;
+  &:hover
+    color: #000
+
+.preview
+  height: 70px
+  width: 100px
+  display: inline-block
+  position: relative
+  background: #fff
+  border-radius 3px;
+  border: 1px solid rgba(0,0,0,.06)
+  line-height: 1.42857143;
+  margin-right: 10px
+  margin-top: 20px
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  img
+    display: block
+    max-width: 100%
+    height: auto
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)

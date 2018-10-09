@@ -1,0 +1,33 @@
+.fieldset
+    padding: 0 0 0 108px
+    margin: 0 0 73px
+    position: relative
+    border: none
+    outline: none
+    counter-increment: item
+
+    &::before
+        position: absolute
+        top: -10px
+        left: 25px
+        content: counter(item)
+        color: #D5D9DA
+        font-size: 72px
+        font-weight: 500
+        line-height: 1
+
+    &.invalid
+        &::before
+            color: #EB5757
+
+        .smallTitle
+            color: #EB5757
+
+
+.smallTitle
+    display: block
+    font-weight: bold
+    font-size: 13px
+    color: $color-text
+    text-transform: uppercase
+    margin: 0 0 5px

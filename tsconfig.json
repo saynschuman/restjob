@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": false,
+    "noEmitHelpers": true,
+    "noUnusedLocals": true,
+    "importHelpers": true,
+    "pretty": true,
+    "lib": [
+      "DOM",
+      "ScriptHost",
+      "es2015",
+      "es2016",
+      "esnext"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": ["./src/"]
+}

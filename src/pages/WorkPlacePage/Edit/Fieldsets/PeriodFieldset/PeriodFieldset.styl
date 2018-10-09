@@ -1,0 +1,66 @@
+.descriptionTextArea
+  resize: none
+  width: 588px
+  height: 300px
+  margin: 0 0 42px
+  border-radius: 3px
+  display: inline-block
+  vertical-align: top
+
+.periodInput
+  display: inline-block
+  vertical-align: top
+  width: 500px
+  margin-right: 30px
+  margin-bottom: 22px
+  margin-top: 35px
+
+.descriptionInputLabel
+  display: block
+  font-size: 13px
+  margin-bottom: 14px
+
+.periodDates
+  margin-bottom: 30px
+
+.selectMonth
+  width: 109px
+
+.periodCol
+  display: inline-block
+  width: 50%
+  &:last-child
+    position: relative;
+    &::before
+      content: ''
+      position: absolute
+      width: 16px
+      height: 1px
+      background-color: #24292e
+      left: -30px
+      bottom: 16px
+
+.stillWork
+  position: absolute
+  right: -85px
+  bottom: 10px
+  font-size: 13px
+  font-weight: 300
+  color: #24292E
+  label
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      left: -20px
+      bottom: 1px
+      width: 14px
+      height: 14px
+      border: 1px solid #C4CCCF
+      border-radius: 100%
+  input
+    display: none
+    &:checked + label
+      &:before
+        background-color: #2d9cdb
+

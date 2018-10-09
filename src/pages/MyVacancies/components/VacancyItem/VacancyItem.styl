@@ -1,0 +1,43 @@
+.itemContainer
+        display flex
+        flex-direction row
+        justify-content space-between
+        padding 50px 0
+        position: relative
+        &::before
+                content: ''
+                position absolute
+                height: 1px
+                width: 100%
+                background-color: #E0E0E0
+                bottom: 10px
+        &::after
+                content: ''
+                position: absolute
+                height: 10px
+                width: 100%
+                background-color: #F2F2F2
+                bottom: 0
+                left: 0
+
+.itemWrapper
+        position: relative
+        &:hover
+                .editBlock
+                        display: block
+        .editBlock
+                font-size: 11px
+                font-weight: 300
+                position: absolute
+                top: 15px
+                right: 0px
+                display: none
+                .edit
+                        margin-right: 5px
+                        display: inline-block
+                        span
+                                color: #2d9cdb
+                .close
+                        display: inline-block
+                        span
+                                color: #eb5757

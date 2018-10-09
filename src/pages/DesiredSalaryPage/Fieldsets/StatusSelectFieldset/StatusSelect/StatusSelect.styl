@@ -1,0 +1,66 @@
+.container
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 32%
+    min-height: 165px
+    border: 1px solid #d6d6d6
+    cursor: pointer
+    &:first-child
+        .titleContainer
+            padding: 18px 30px 8px 44px
+            background: no-repeat 16px 19px/auto 30px
+    &:nth-child(2) .title
+    &:nth-child(3) .title
+        width: 80px
+
+    &.isChecked
+        border-color: #2D9CDB
+        border-width 2px
+        cursor: auto
+
+    &.notAvailable
+        border-color #EB5757
+        cursor: auto
+
+.titleContainer
+  display: block
+  min-height: 60px
+  margin: 0 auto
+  padding: 18px 7px 10px 50px
+  background: no-repeat 15px 19px/auto 25px
+
+
+.title
+    font-size: 12px
+    margin: 0 0 5px
+    line-height: 14px
+
+.price
+    font-weight: 300
+    font-size: 18px
+
+.description
+    font-size: 11px
+    padding: 0 5px 0 15px
+    color: #4F4F4F
+    line-height: 15px
+    font-weight: 300
+
+    a
+        color: $color-link
+        text-decoration: none
+        font-weight: 500
+        display: block
+        margin-top: 20px
+
+.notEnoughMoney
+    position: absolute
+    bottom: 10px
+    width: 100%
+    text-align: center
+    background: #fff
+    font-size: 11px
+    text-transform: uppercase
+    color: #EB5757
+    font-weight: 500
